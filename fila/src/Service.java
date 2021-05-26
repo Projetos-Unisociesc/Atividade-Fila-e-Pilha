@@ -8,7 +8,7 @@ public class Service {
     private static final int QUANTIDADE_MAXIMA_PACIENTES = 20;
 
     // Quando usamos o Set não permitimos dados duplicados
-    static Set<Paciente> pacientes = new HashSet<>();
+    private static Set<Paciente> pacientes = new HashSet<>();
 
     public static void adicionaPaciente(Paciente paciente) {
 

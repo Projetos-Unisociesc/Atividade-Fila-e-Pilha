@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
         boolean sair = false;
 
         do {
@@ -15,18 +16,19 @@ public class Main {
 
                 case "1":
 
-                    Service.adicionaPaciente(Service.informarPaciente(scanner));
+                    Service.adicionarCaixa(Service.informarCaixa(scanner));
 
                     break;
+
                 case "2":
 
-                    Service.removePaciente(scanner.next());
+                    Service.removerCaixa(scanner.next());
 
                     break;
 
                 case "3":
 
-                    Service.exibePacientes();
+                    Service.listarCaixas();
 
                     break;
 
@@ -41,12 +43,7 @@ public class Main {
                     System.err.println("Opção não encontrada");
 
                 }
-
-
             }
-
-
         } while (!sair);
     }
-
 }
